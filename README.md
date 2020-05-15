@@ -1,1 +1,1 @@
-# hexlet
+# hexlet-basics
