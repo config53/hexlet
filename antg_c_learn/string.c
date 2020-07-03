@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define SIZE 5
 
 void printString(const char * hello)
 {
@@ -15,9 +16,15 @@ void printcity(void)
 
 void prlean(void)
 {
-	const char * prlean [] = {"C", "C++", "Java", "python", "SQL"};
-	printf("%s\n", prlean [0]);
-	printf("%s\n", prlean [1]);
+	char * prlean[SIZE] = {"C", "C++", "Java", "python", "SQL"};
+//	printf("%s\n", prlean [0]);
+//	printf("%s\n", prlean [1]);
+	int i = 0;
+	while(i < SIZE)
+	{
+		printf("%s\n",prlean[i]);
+		i++;
+	}
 	return;
 }
 int main(int argc, const char* argv[])
